@@ -3,6 +3,7 @@
     License: none (public domain)
 */
 @import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
+@import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -84,4 +85,87 @@ main {
 .logo img {
   width: 100%;
   height: auto;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+}
+.welcome__image {
+  background: #FFA451;
+  width: 100%;
+  max-height: 50%;
+  padding: 10% 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__image img {
+  max-width: 80%;
+}
+.welcome__content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 5%;
+}
+.welcome__content h1 {
+  font-weight: bold;
+  color: #27214D;
+}
+.welcome__content p {
+  color: #5D577E;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.welcome__content .welcome__button {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__content .welcome__button a {
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFA451;
+  text-align: center;
+  transition: 1s all;
+  cursor: pointer;
+}
+.welcome__content .welcome__button a:hover {
+  background-color: #27214D;
+}
+.welcome__content .welcome__button a:active {
+  transform: scale(1.1);
+}
+
+.logo--animation {
+  -webkit-animation: pulse 2s;
+          animation: pulse 2s;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=style.css.map */
