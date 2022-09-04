@@ -4,6 +4,7 @@
 */
 @import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
 @import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
+@import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -168,4 +169,81 @@ main {
   100% {
     transform: scale(1);
   }
+}
+
+.authentication {
+  display: flex;
+  flex-direction: column;
+}
+.authentication__image {
+  background: #FFA451;
+  width: 100%;
+  max-height: 50%;
+  padding: 10% 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.authentication__image img {
+  max-width: 80%;
+}
+.authentication__form {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 5%;
+}
+.authentication__form .authentication__content {
+  display: flex;
+  flex-direction: column;
+}
+.authentication__form .authentication__content label {
+  color: #27214D;
+  font-weight: 500;
+}
+.authentication__form .authentication__content input {
+  border: none;
+  background-color: #F7F5F5;
+  padding: 20px;
+  margin-top: 30px;
+}
+.authentication__form .authentication__content input::-moz-placeholder {
+  color: #C2BDBD;
+}
+.authentication__form .authentication__content input:-ms-input-placeholder {
+  color: #C2BDBD;
+}
+.authentication__form .authentication__content input::placeholder {
+  color: #C2BDBD;
+}
+.authentication__form .authentication__content p {
+  padding-top: 2%;
+  color: red;
+}
+.authentication__form .authentication__content .authentication__text--hidden {
+  display: none;
+}
+.authentication__form .authentication__button {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.authentication__form .authentication__button a {
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFA451;
+  text-align: center;
+  transition: 0.8s all;
+  cursor: pointer;
+}
+.authentication__form .authentication__button a:hover {
+  background-color: #27214D;
+}
+.authentication__form .authentication__button a:active {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
