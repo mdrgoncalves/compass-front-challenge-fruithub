@@ -420,6 +420,7 @@ main {
 .combos__nav h2:not(h2:first-child) {
   margin-left: 30px;
   color: #253F66;
+  opacity: 0.5;
 }
 .combos__nav h2:first-child::after {
   content: "";
@@ -440,7 +441,7 @@ main {
   margin-right: 15px;
   border-radius: 16px;
   padding: 3%;
-  width: 40%;
+  width: 43%;
   text-align: center;
   justify-content: center;
 }
@@ -462,10 +463,10 @@ main {
 }
 .combos__content .card__food img {
   width: 70%;
-  max-height: 80px;
+  max-height: 10vh;
 }
 .combos__content .card p {
-  margin-top: 15px;
+  margin-top: 5%;
   font-weight: 500;
   font-size: 0.875rem;
   color: #27214D;
@@ -474,7 +475,7 @@ main {
   display: flex;
   justify-content: space-around;
   color: #FFA451;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 .combos__content .card__price span {
   align-self: flex-end;
