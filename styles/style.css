@@ -279,6 +279,10 @@ main {
   color: #27214D;
   font-size: 0.875rem;
 }
+.header .intro__basket {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
 .header .form__search {
   display: flex;
   margin: 5%;
