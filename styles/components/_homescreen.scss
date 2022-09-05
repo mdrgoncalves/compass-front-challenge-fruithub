@@ -1,0 +1,301 @@
+@import '../abstract/variables';
+
+.header {
+
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5%;
+
+        &__welcome {
+            display: flex;
+
+            & h2 {
+                margin-left: 20px;
+                font-weight: 400;
+                color: $color-dark-text;
+            }
+        }
+    }
+
+    .form__search {
+        display: flex;
+        margin: 5%;
+
+        .form__input {
+            display: flex;
+            align-items: center;
+            background-color: $color-input-bg-homescreen;
+            border-radius: 16px;
+            padding: 20px; 
+            width: 100%;
+            
+            & i {
+                color: #B4B4C0;
+            }
+
+            & input {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                margin-left: 15px;
+                color: #B4B4C0;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        & div {
+            margin-left: 5px;
+        }
+    }
+}
+
+
+.tags {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #FAFAFA;
+    
+    &__card {
+        flex: 0 0 auto;
+        margin-right: 3px;
+        border: 1px solid rgb(226, 226, 226);
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        width: 23%;
+        height: 32px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & span {
+            color: #333333;
+            font-size: 80%;
+        }
+    }
+
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.recommended {
+    margin: 7% 5% 5% 5%;
+
+    & h2 {
+        font-size: 112.5%;
+        line-height: 30px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: $color-primary;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+
+        .card {
+            border: 1px solid #f5f3f3;
+            border-radius: 16px;
+            text-align: center;
+            padding: 5%;
+            margin-left: 6px;
+            width: 50%;
+
+            &__heart {
+                text-align: right;
+
+                & img {
+                    width: 20px;
+                }
+            }
+
+            &__food {
+                
+                & img {
+                    width: 100%;
+                    height: 150px;
+                }
+            }
+
+            & p {
+                margin-top: 15px;
+                font-weight: 500;
+                font-size: 80%;
+                color: $color-dark-text;
+            }
+
+            &__price {
+                display: flex;
+                justify-content: space-around;
+                color: $color-primary;
+                margin-top: 8px;
+
+                & span {
+                    align-self: flex-end;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}
+
+.combos {
+    margin: 7% 5% 5% 5%;
+    padding-bottom: 20px;
+
+    &__nav {
+        display: flex;
+        margin-bottom: 20px;
+        
+        & h2 {
+            cursor: pointer;
+            font-size: 112.5%;
+            line-height: 30px;
+            color: $color-dark-text;
+
+            &:not(h2:first-child) {
+                margin-left: 30px;
+                color: #253F66;
+            }
+
+            &:first-child::after {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 3px;
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100%;
+        
+        .card {
+            flex: 0 0 auto;
+            margin-right: 15px;
+            border-radius: 16px;
+            padding: 3%;
+            width: 40%;
+            text-align: center;
+            justify-content: center;
+
+            &__heart {
+                text-align: right;
+
+                & img {
+                    width: 20px;
+                }
+            }
+
+            & a {
+                width: 100%;
+            }
+
+            &__food {
+                width: 100%;
+                height: 45%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                & img {
+                    width: 70%;
+                    max-height: 80px;
+                }
+            }
+
+            & p {
+                margin-top: 15px;
+                font-weight: 500;
+                font-size: 0.875rem;
+                color: $color-dark-text;
+            }
+
+            &__price {
+                display: flex;
+                justify-content: space-around;
+                color: $color-primary;
+                margin-top: 8px;
+
+                & span {
+                    align-self: flex-end;
+                    font-size: 0.875rem;
+                }
+            }
+
+            &:first-child {
+                background-color: #FFFCF2;
+            }
+
+            &:nth-child(2) {
+                background-color: #FEF4F4;
+            }
+
+            &:nth-child(3) {
+                background-color: #F1EFF6;
+            }
+
+            &:last-child {
+                background-color: #F1F6FF;
+            }
+        }
+
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 240px) {
+
+    .recommended {
+        &__content {
+            .card {
+                &__food {
+                    & img {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .combos {
+        &__nav {
+            & h2 {
+                font-size: 85%;
+
+                &:not(h2:first-child) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    
+        &__content {  
+            .card {
+                width: 60%;
+            }
+        }
+    }
+}
