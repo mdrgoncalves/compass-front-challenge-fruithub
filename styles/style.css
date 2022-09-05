@@ -5,6 +5,7 @@
 @import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
 @import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
 @import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
+@import url("http://fonts.cdnfonts.com/css/tt-norms-pro");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -246,4 +247,239 @@ main {
 }
 .authentication__form .authentication__button a:active {
   transform: scale(1.1);
+}
+
+.header .intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+.header .intro__welcome {
+  display: flex;
+}
+.header .intro__welcome h2 {
+  margin-left: 20px;
+  font-weight: 400;
+  color: #27214D;
+}
+.header .form__search {
+  display: flex;
+  margin: 5%;
+}
+.header .form__search .form__input {
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+}
+.header .form__search .form__input i {
+  color: #B4B4C0;
+}
+.header .form__search .form__input input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  margin-left: 15px;
+  color: #B4B4C0;
+}
+.header .form__search .form__input input:focus {
+  outline: none;
+}
+.header .form__search div {
+  margin-left: 5px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  padding: 8px 20px;
+  background-color: #FAFAFA;
+  -webkit-overflow-scrolling: touch;
+}
+.tags__card {
+  flex: 0 0 auto;
+  margin-right: 3px;
+  border: 1px solid rgb(226, 226, 226);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 23%;
+  height: 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tags__card span {
+  color: #333333;
+  font-size: 80%;
+}
+.tags::-webkit-scrollbar {
+  display: none;
+}
+
+.recommended {
+  margin: 7% 5% 5% 5%;
+}
+.recommended h2 {
+  font-size: 112.5%;
+  line-height: 30px;
+}
+.recommended h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #FFA451;
+}
+.recommended__content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.recommended__content .card {
+  border: 1px solid #f5f3f3;
+  border-radius: 16px;
+  text-align: center;
+  padding: 5%;
+  margin-left: 6px;
+  width: 50%;
+}
+.recommended__content .card__heart {
+  text-align: right;
+}
+.recommended__content .card__heart img {
+  width: 20px;
+}
+.recommended__content .card__food img {
+  width: 100%;
+  height: 150px;
+}
+.recommended__content .card p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 80%;
+  color: #27214D;
+}
+.recommended__content .card__price {
+  display: flex;
+  justify-content: space-around;
+  color: #FFA451;
+  margin-top: 8px;
+}
+.recommended__content .card__price span {
+  align-self: flex-end;
+  font-size: 0.875rem;
+}
+
+.combos {
+  margin: 7% 5% 5% 5%;
+  padding-bottom: 20px;
+}
+.combos__nav {
+  display: flex;
+  margin-bottom: 20px;
+}
+.combos__nav h2 {
+  cursor: pointer;
+  font-size: 112.5%;
+  line-height: 30px;
+  color: #27214D;
+}
+.combos__nav h2:not(h2:first-child) {
+  margin-left: 30px;
+  color: #253F66;
+}
+.combos__nav h2:first-child::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #FFA451;
+}
+.combos__content {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.combos__content .card {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  border-radius: 16px;
+  padding: 3%;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+}
+.combos__content .card__heart {
+  text-align: right;
+}
+.combos__content .card__heart img {
+  width: 20px;
+}
+.combos__content .card a {
+  width: 100%;
+}
+.combos__content .card__food {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.combos__content .card__food img {
+  width: 70%;
+  max-height: 80px;
+}
+.combos__content .card p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #27214D;
+}
+.combos__content .card__price {
+  display: flex;
+  justify-content: space-around;
+  color: #FFA451;
+  margin-top: 8px;
+}
+.combos__content .card__price span {
+  align-self: flex-end;
+  font-size: 0.875rem;
+}
+.combos__content .card:first-child {
+  background-color: #FFFCF2;
+}
+.combos__content .card:nth-child(2) {
+  background-color: #FEF4F4;
+}
+.combos__content .card:nth-child(3) {
+  background-color: #F1EFF6;
+}
+.combos__content .card:last-child {
+  background-color: #F1F6FF;
+}
+.combos__content::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 240px) {
+  .recommended__content .card__food img {
+    height: 80px;
+  }
+  .combos__nav h2 {
+    font-size: 85%;
+  }
+  .combos__nav h2:not(h2:first-child) {
+    margin-left: 20px;
+  }
+  .combos__content .card {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */
