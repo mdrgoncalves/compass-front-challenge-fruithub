@@ -61,6 +61,10 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 body {
   font-family: "TT Norms Pro", sans-serif;
 }
@@ -116,11 +120,13 @@ main {
 .welcome__content h1 {
   font-weight: bold;
   color: #27214D;
+  font-size: 1rem;
 }
 .welcome__content p {
   color: #5D577E;
   line-height: 24px;
   margin-top: 10px;
+  font-size: 1rem;
 }
 .welcome__content .welcome__button {
   margin-top: 20%;
@@ -203,6 +209,7 @@ main {
 .authentication__form .authentication__content label {
   color: #27214D;
   font-weight: 500;
+  font-size: 1rem;
 }
 .authentication__form .authentication__content input {
   border: none;
@@ -213,12 +220,18 @@ main {
 }
 .authentication__form .authentication__content input::-moz-placeholder {
   color: #C2BDBD;
+  font-size: 1rem;
 }
 .authentication__form .authentication__content input:-ms-input-placeholder {
   color: #C2BDBD;
+  font-size: 1rem;
 }
 .authentication__form .authentication__content input::placeholder {
   color: #C2BDBD;
+  font-size: 1rem;
+}
+.authentication__form .authentication__content input:focus {
+  font-size: 1rem;
 }
 .authentication__form .authentication__content p {
   padding-top: 2%;
@@ -264,6 +277,7 @@ main {
   margin-left: 20px;
   font-weight: 400;
   color: #27214D;
+  font-size: 0.875rem;
 }
 .header .form__search {
   display: flex;
@@ -286,9 +300,11 @@ main {
   background-color: transparent;
   margin-left: 15px;
   color: #B4B4C0;
+  font-size: 0.75rem;
 }
 .header .form__search .form__input input:focus {
   outline: none;
+  font-size: 0.75rem;
 }
 .header .form__search .form__input input::-moz-placeholder {
   color: #B4B4C0;
@@ -327,7 +343,7 @@ main {
 }
 .tags__card span {
   color: #333333;
-  font-size: 80%;
+  font-size: 0.875rem;
 }
 .tags::-webkit-scrollbar {
   display: none;
@@ -337,7 +353,7 @@ main {
   margin: 7% 5% 5% 5%;
 }
 .recommended h2 {
-  font-size: 112.5%;
+  font-size: 1.125rem;
   line-height: 30px;
 }
 .recommended h2::after {
@@ -397,7 +413,7 @@ main {
 }
 .combos__nav h2 {
   cursor: pointer;
-  font-size: 112.5%;
+  font-size: 1.125rem;
   line-height: 30px;
   color: #27214D;
 }
@@ -545,7 +561,7 @@ main {
   background-color: #FFFFFF;
 }
 .info__price h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .info__price .info__add {
@@ -563,9 +579,10 @@ main {
 }
 .info__price .info__add div span {
   margin: 0 20px;
+  font-size: 1.5rem;
 }
 .info__price .info__add p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .info__price .info__add img {
@@ -578,7 +595,7 @@ main {
   padding-bottom: 8%;
 }
 .info__tags h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 30px;
   color: #27214D;
 }
@@ -601,6 +618,7 @@ main {
   padding: 8px;
   margin-top: 8px;
   color: #403E3E;
+  font-size: 0.75rem;
 }
 .info__text {
   padding-top: 5%;
@@ -608,6 +626,7 @@ main {
 .info__text p {
   color: #333333;
   font-weight: 200;
+  font-size: 0.875rem;
 }
 .info__buttons {
   display: flex;
