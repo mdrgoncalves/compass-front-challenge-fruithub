@@ -31,6 +31,7 @@
             & label {
                 color: $color-dark-text;
                 font-weight: 500;
+                font-size: 1rem;
             }
 
             & input {
@@ -42,6 +43,11 @@
 
                 &::placeholder {
                     color: $color-input-text;
+                    font-size: 1rem;
+                }
+
+                &:focus {
+                    font-size: 1rem;
                 }
                 
             }
