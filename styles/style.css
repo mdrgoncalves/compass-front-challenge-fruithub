@@ -446,10 +446,10 @@ main {
 }
 .combos__content .card {
   flex: 0 0 auto;
-  margin-right: 15px;
+  margin-right: 8px;
   border-radius: 16px;
   padding: 3%;
-  width: 43%;
+  width: 46%;
   text-align: center;
   justify-content: center;
 }
